@@ -10,7 +10,7 @@
         /* --- Left Side: Image --- */
         .image-section {
             flex: 1; 
-            background-image: url('login-banner.png');
+            background-image: url('/login-banner.png');
             background-size: cover;
             background-position: center;
         }
