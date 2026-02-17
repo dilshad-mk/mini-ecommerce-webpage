@@ -1,6 +1,11 @@
 import React from 'react'
 import "./Navbar.css"
+import { useNavigate } from 'react-router-dom'
+
 function Navbar() {
+  const navigate=useNavigate();
+ const handleLoginRedirect = () => {
+        navigate("/login");}
   return (
     <div>
         <nav class="navbar navbar-expand-lg bg-white fixed-top">
@@ -29,11 +34,11 @@ function Navbar() {
       </ul>
       <form class="d-flex gap-2" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn search-btn" type="submit">Search</button>
       </form>
      <div className='cart_wishlist'>
-         <i class="bi bi-bag-fill"></i>
-      <i class="bi bi-heart"></i>
+         <i onClick={handleLoginRedirect} class="bi bi-bag-fill"></i>
+      <i onClick={handleLoginRedirect} class="bi bi-heart"></i>
      </div>
     </div>
   </div>

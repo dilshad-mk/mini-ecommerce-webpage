@@ -253,10 +253,7 @@ ul .active{
   cursor: pointer;
   box-shadow: 1px 1px 10px rgba(79, 77, 77, 0.614);
 }
-.trending_product_body:hover .img-div img{
-    transition: 0.3s ease;
-    scale: 1.05;
-}
+
 
 /* --- Shop By Brands Section --- */
         .brands-section {

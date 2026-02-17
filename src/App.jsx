@@ -1,20 +1,22 @@
-import { useState } from 'react'
-
-import Page1 from "./components//Page1";
-import Navbar from "./components//Navbar";
-import './App.css'
-import Login from './components/Login';
+import Page1 from "./components/Page1";
+import Navbar from "./components/Navbar";
+import Login from "./components/Login";
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 function App() {
- 
+
+  const location = useLocation();
 
   return (
     <>
-       <Navbar/>
-    <Page1/>
-     <Login/>
+      {location.pathname !== "/login" && <Navbar />}
+
+      <Routes>
+        <Route path='/' element={<Page1 />} />
+        <Route path='/login' element={<Login />} />
+      </Routes>
     </>
   )
 }
 
-export default App
+export default App;

@@ -1,6 +1,6 @@
 import React from 'react'
-
 import "./Page1.css"
+import { useNavigate } from 'react-router-dom'
 function Page1() {
     const products=[{
         image:"/pp1.png",
@@ -54,6 +54,9 @@ function Page1() {
     },
 
 ]
+const navigate=useNavigate();
+ const handleLoginRedirect = () => {
+        navigate("/login");}
   return (
     <div>
         {/* banner section  */}
@@ -64,7 +67,7 @@ function Page1() {
                 <h2>Apple Watch Series</h2>
                 <p>Feature packed at a better value than ever <br /> Powerful sensors to
                     monitor your fitness</p>
-                    <button>Shop Now <i class="bi bi-arrow-right"></i></button>
+                    <button onClick={handleLoginRedirect}>Shop Now <i class="bi bi-arrow-right"></i></button>
                 </div>
             </div>
         
@@ -75,7 +78,7 @@ function Page1() {
         <div className='popular-products-wrapper'>
            <div className='headiing-part-pp'>
              <h5>Popular products</h5>
-             <h6>View all products <i class="bi bi-arrow-right"></i></h6>
+             <h6 onClick={handleLoginRedirect}>View all products <i class="bi bi-arrow-right"></i></h6>
            </div>
 
                 <div className="pp-grid">
@@ -109,13 +112,13 @@ function Page1() {
                 <h4>BIG SCREEN</h4>
                 <h3>Samrt Watch Series 7</h3>
                 <h4>$65.00</h4>
-                <button className='rounded-pill'>Shop Now</button>
+                <button className='rounded-pill' onClick={handleLoginRedirect}>Shop Now</button>
             </div>
             <div className='cam'>
                 <h4>STUDIO DISPLAY</h4>
                 <h3>600 nits of brightnes.</h3>
                 <h4>$999.00</h4>
-                <button className='rounded-pill'>Shop Now</button>
+                <button className='rounded-pill' onClick={handleLoginRedirect}>Shop Now</button>
             </div>
         </div>
         {/* trending products */}
@@ -177,7 +180,7 @@ function Page1() {
 </section>
 
 <section className="info-bar">
-    <span className="site-url">www.DownloadNewThemes.com</span>
+    <span className="site-url">www.Ecco.com</span>
     
     <div className="info-grid">
         <div className="info-item">
@@ -186,7 +189,7 @@ function Page1() {
         </div>
         <div className="info-item">
             <h4>Work inquiries</h4>
-            <p>inquiries@zaro.com</p>
+            <p>inquiries@Ecco.com</p>
         </div>
         <div className="info-item">
             <h4>Call us</h4>
@@ -262,4 +265,4 @@ function Page1() {
   )
 }
 
-export default Page1
+export default Page1;

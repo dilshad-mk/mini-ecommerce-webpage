@@ -37,3 +37,11 @@
 .bi-heart, .bi-bag-fill{
     cursor: pointer;
 }
+.search-btn{
+    border-color: orangered;
+    transition: 0.3 ease;
+}
+.search-btn:hover{
+    background-color: orangered;
+    color: white;
+}
