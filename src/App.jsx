@@ -11,7 +11,7 @@ function App() {
   return (
     <>
        <Navbar/>
-    {/* <Page1/> */}
+    <Page1/>
      <Login/>
     </>
   )
