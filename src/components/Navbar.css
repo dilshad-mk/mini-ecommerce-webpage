@@ -1,0 +1,39 @@
+.navbar{
+    box-shadow: 1px 1px 15px rgb(191, 191, 191);
+}
+.navbar-brand{
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.navbar-brand .bi-lightning-fill{
+    color: orangered;
+}
+.navbar-nav{   
+    font-size: 12px;
+    font-weight: 500; 
+}
+.nav-link{
+      &:hover{
+        background-color: rgba(220, 220, 220, 0.502);
+        border-radius: 5px;
+    }
+}
+.bi-chevron-compact-down{
+    font-weight: 700;
+}
+.cart_wishlist{
+    display: flex;
+    gap: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.bi-heart{
+    color: red;
+    transition: 0.3s ease;
+    &:hover{
+        scale: 1.1;
+    }
+}
+.bi-heart, .bi-bag-fill{
+    cursor: pointer;
+}
