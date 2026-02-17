@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Page1 from "./components//Page1";
 import Navbar from "./components//Navbar";
 import './App.css'
+import Login from './components/Login';
 
 function App() {
  
@@ -10,8 +11,8 @@ function App() {
   return (
     <>
        <Navbar/>
-    <Page1/>
-     
+    {/* <Page1/> */}
+     <Login/>
     </>
   )
 }
